@@ -1,0 +1,89 @@
+spring:
+  application:
+    name: vasscompany
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/vasscompany
+    password: admin
+    username: postgres
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+config:
+  oauth2:
+    clientid: vass
+    clientSecret: vass
+    accesstoken_validity: 1
+    refreshtoken_validity: 30
+    privateKey: -----BEGIN RSA PRIVATE KEY-----
+      MIIEpAIBAAKCAQEAvZLkDfnxWXNAjILCZmWX3bvgAnxYe3RJoy37EM8Q9KhWgV2o
+      FB6sxSXQ6uk22nezP0jArXbIhJijdzqmUbT4r2sx3pMfZebMnaOi17SirO73JyNe
+      eHWzgCovB8gaFgPt6cvaK9ItpMoFVDOT8hw6AQemRuVtC6qlVz1NlDZWxLV7ZVCy
+      oMNCCYbCAq6JOulMO148dUPob1vKGnyMlM+f8W78fvFBXCP+/NPUSXuubTdaSKkD
+      icf65Yhpj95UpKBeE5RnPU8GpDiq4YXMmi13ZF3iWCK+WcGBFtjJvU/tGj51Mwra
+      JWJsTDljjKd8dcNOP71GIJimYNnWPD4Gb6VkbwIDAQABAoIBAFYtUD6KQIzJN66o
+      QncJ9990aIC4xgBY/KCRZnBdsPeHDswAJ0f+Kcv1ROOE4MqvX2yFRhGUzdJ5ENZC
+      cxjxi5syv5jOiJdqM9n1aTFljA3RE8lW6rsXxmGcy4ReEn2vi5ecc7E3+kfPDl0Y
+      lUiaTEPrlkrkQI3tJPxjgcC+cvM4RHWO8Q4NTUACr9sVCLgW5dW+2cK7WbXPtYbn
+      /ZJtF6k0gjYQwIQyPTbO73GA2FCm2PlgJt8JBvkqdkaTNHyLQDiO6JaXYYJwiCme
+      M2nFkfvDjWMYOM8ddyLDiLaQwXd7uJRE8xZXRnqXgfwFlESP4HEov7EWmlbwCgyO
+      DJ7YmgECgYEA3NsqQF/O1REL0SfvNWJTahUGgKX74LqHM4caoRUE3Kd1IWrDsDTx
+      0wNn8omFxcVxlJtv4dLlwc09nNdSqL5ZGp6RRh3GYFweWpaMBIwsihmFFLYvfBaw
+      PrT9fHfHOYxFhTgYvejJ2LN4e8E+y0WmM0V7tq/1n/qnAR1ZVmGUHRcCgYEA271n
+      SHvQK2mh2cah32tsp78wARbeMi4DPHcU45KsbdsOp9fLwesXNlh1LV0a8iEK+5HI
+      8MayDRSRVck8y++hNSAww9wqZtDiZyp5ZP7wvW+CG6r55LVDzPd84y7EcGPs+b3s
+      RcxRYsXdzpqseHTSRQogJM2pQE1cnrSL7haL+mkCgYEAjAEfOqnBiw4ASLmhCV1o
+      dYIYmisejeqQ1JhbyCtz5pD9To7IuIYHmnW5SmXleGbexo72kNhJr950pV1WWAQ6
+      pgZJH4K2g9VBpLl0z1kwzua4l1WaqnYTidzgKCwiDhge5gGWpaTRd97ljMYHEYL4
+      hd4RO9E1yxFxFuLNBFZdN0cCgYEAq4gb0vpL00e/P3gOLpD2HbBiMcd/Jh7DCfVP
+      SiLaFVt2AlGzTipNUXAV8JaIjVB7+UuhV0tT/F/838GagvwJlKYPSyVXuDEBO1Vt
+      tAhLNyWPpDeAoSdayOq9A78jOzTV7VJz2TyYn4kkD76wOcu/xIMV+oTMxVReo8j+
+      npndJVkCgYAZrXPt9tO4CGxtphPh+HEtVt55R/x0dPb7e1S+Knk8pQw3cr6ndf6a
+      au+23esswsDaDODYPFJNjwjI1jQTR3Kh7hWUMdQr7ieWM4zVd7dL5Fzukk2Eo9QB
+      S24VVUpx5RCgwIjiM8G1Tm6kszkFYKHZ8tcZ211McS1Ur+CSFoXQ6A==
+      -----END RSA PRIVATE KEY-----
+    publicKey: -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvZLkDfnxWXNAjILCZmWX
+      3bvgAnxYe3RJoy37EM8Q9KhWgV2oFB6sxSXQ6uk22nezP0jArXbIhJijdzqmUbT4
+      r2sx3pMfZebMnaOi17SirO73JyNeeHWzgCovB8gaFgPt6cvaK9ItpMoFVDOT8hw6
+      AQemRuVtC6qlVz1NlDZWxLV7ZVCyoMNCCYbCAq6JOulMO148dUPob1vKGnyMlM+f
+      8W78fvFBXCP+/NPUSXuubTdaSKkDicf65Yhpj95UpKBeE5RnPU8GpDiq4YXMmi13
+      ZF3iWCK+WcGBFtjJvU/tGj51MwraJWJsTDljjKd8dcNOP71GIJimYNnWPD4Gb6Vk
+      bwIDAQAB
+      -----END PUBLIC KEY-----
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvZLkDfnxWXNAjILCZmWX
+          3bvgAnxYe3RJoy37EM8Q9KhWgV2oFB6sxSXQ6uk22nezP0jArXbIhJijdzqmUbT4
+          r2sx3pMfZebMnaOi17SirO73JyNeeHWzgCovB8gaFgPt6cvaK9ItpMoFVDOT8hw6
+          AQemRuVtC6qlVz1NlDZWxLV7ZVCyoMNCCYbCAq6JOulMO148dUPob1vKGnyMlM+f
+          8W78fvFBXCP+/NPUSXuubTdaSKkDicf65Yhpj95UpKBeE5RnPU8GpDiq4YXMmi13
+          ZF3iWCK+WcGBFtjJvU/tGj51MwraJWJsTDljjKd8dcNOP71GIJimYNnWPD4Gb6Vk
+          bwIDAQAB
+          -----END PUBLIC KEY-----
+
+logging:
+  level:
+    org.springframework: INFO
+    org.springframework.web: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.hibernate: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  file:
+    path: logs
